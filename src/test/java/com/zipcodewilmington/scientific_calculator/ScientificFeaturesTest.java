@@ -1,2 +1,4 @@
-package com.zipcodewilmington.scientific_calculator;public class ScientificFeaturesTest {
+package com.zipcodewilmington.scientific_calculator;
+
+public class ScientificFeaturesTest {
 }
