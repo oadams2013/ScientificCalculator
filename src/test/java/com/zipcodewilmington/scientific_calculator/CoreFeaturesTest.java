@@ -1,5 +1,6 @@
 package com.zipcodewilmington.scientific_calculator;
 
+import com.zipcodewilmington.scientificcalculator.CoreFeatures;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,14 +9,14 @@ public class CoreFeaturesTest {
     @Test
     public void addTest(){
         //Given
-        int a = 5;
-        int b = 4;
-        int expected = 9;
+        double a = 5.0;
+        double b = 4.0;
+        double expected = 9.0;
 
         //When
-        int actual = CoreFeatures.add(a, b);
+        double actual = CoreFeatures.add(a, b);
 
         //Then
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual, 0.0);
     }
 }
