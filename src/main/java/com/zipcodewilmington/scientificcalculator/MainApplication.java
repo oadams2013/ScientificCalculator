@@ -16,9 +16,6 @@ public class MainApplication {
     public static void run(){
         Double displayNumber = 0.0;
 
-        Console.println(Console.introArt());
-        Console.println(Console.calculatorWord());
-
         boolean play = true;
 
         Console.println(Console.introArt());
@@ -36,8 +33,15 @@ public class MainApplication {
 
             String operationChoice = Console.getStringInput("\n" + "Enter desired math operation (ex: add, multiply, ect.)" + "\n" + "or clear to clear number");
 
-            if(operationChoice.equalsIgnoreCase("options")){Console.println(Console.MathOptions());operationChoice = Console.getStringInput("Enter desired math operation" );}
-            if(operationChoice.equalsIgnoreCase("clear")){displayNumber = 0.0;Console.println(displayNumber + "");operationChoice = Console.getStringInput("Enter desired math operation" );}
+            if(operationChoice.equalsIgnoreCase("options")){
+                Console.println(Console.MathOptions());
+                operationChoice = Console.getStringInput("Enter desired math operation" );}
+
+
+            if(operationChoice.equalsIgnoreCase("clear")){
+                displayNumber = 0.0;Console.println(displayNumber + "");
+                operationChoice = Console.getStringInput("Enter desired math operation" );
+            }
 
 
 
