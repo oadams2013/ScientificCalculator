@@ -16,6 +16,9 @@ public class MainApplication {
     public static void run(){
         Double displayNumber = 0.0;
 
+        Console.println(Console.introArt());
+        Console.println(Console.calculatorWord());
+
         boolean play = true;
 
         Console.println("Welcome to our calculator!");

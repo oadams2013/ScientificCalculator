@@ -44,4 +44,26 @@ public class Console {
         return "Add, Subtract, Multiply, Divide, Clear" + "\n" +
             "factorial, log, Sin, Cos, Tan";
     }
+
+    public static String introArt(){
+        return "|  _________________  |" + "\n" +
+                "| | JO           0. | |"+ "\n" +
+                "| |_________________| |"+ "\n" +
+                "|  ___ ___ ___   ___  |"+ "\n" +
+                "| | 7 | 8 | 9 | | + | |"+ "\n" +
+                "| |___|___|___| |___| |"+ "\n" +
+                "| | 4 | 5 | 6 | | - | |"+ "\n" +
+                "| |___|___|___| |___| |"+ "\n" +
+                "| | 1 | 2 | 3 | | x | |"+ "\n" +
+                "| |___|___|___| |___| |"+ "\n" +
+                "| | . | 0 | = | | / | |"+ "\n" +
+                "| |___|___|___| |___| |"+ "\n" +
+                "|_____________________|";
+    }
+
+    public static String calculatorWord(){
+        return "|     CALCULATOR      |" + "\n" +
+                "|_____________________|";
+    }
 }
+
