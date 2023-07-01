@@ -13,15 +13,16 @@ public class MainApplication {
         Integer displayNumber = 0;
         boolean play = true;
 
-        Console.println("Welcome to our calculator!");
+        Console.println(Console.introArt());
+        Console.println(Console.calculatorWord());
 
-        Console.println(displayNumber + "");
+        Console.println("\n" + "Num: "+ displayNumber + "");
 
         displayNumber += Console.getIntegerInput("Enter number");
 
         while (play){
 
-            Console.println(displayNumber + "");
+            Console.println("\n" + "Num: "+ displayNumber + "");
 
             String operationChoice = Console.getStringInput("Enter desired math operation (ex: add, multiply, ect.)" + "\n" + "or clear to clear number");
 
@@ -31,6 +32,8 @@ public class MainApplication {
 
 
             //Can make an array with all operational words. If operationChoice is not a contained word in the array, Error message.
+
+            //50 if statements for the options.
             if (operationChoice.equalsIgnoreCase("add")) {
 //                displayNumber = CoreFeatures.add(displayNumber, enteredNumber);
             }
@@ -48,8 +51,7 @@ public class MainApplication {
             }
 
 
-            Console.println(displayNumber + "");
-            //50 if statements for the options.
+            Console.println("\n" + "Num: "+ displayNumber + "");
 
 
             //Give option to exit program.
