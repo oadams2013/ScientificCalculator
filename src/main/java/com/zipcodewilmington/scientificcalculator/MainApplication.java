@@ -14,7 +14,13 @@ public class MainApplication {
         boolean play = true;
 
         Console.println("Welcome to our calculator!");
+
+        Console.println(displayNumber + "");
+
+        displayNumber += Console.getIntegerInput("Enter number");
+
         while (play){
+
             Console.println(displayNumber + "");
 
             String operationChoice = Console.getStringInput("Enter desired math operation (ex: add, multiply, ect.)" + "\n" + "or clear to clear number");
@@ -26,7 +32,7 @@ public class MainApplication {
 
             //Can make an array with all operational words. If operationChoice is not a contained word in the array, Error message.
             if (operationChoice.equalsIgnoreCase("add")) {
-                //displayNumber = CoreFeatures.add(displayNumber, enteredNumber);
+//                displayNumber = CoreFeatures.add(displayNumber, enteredNumber);
             }
 
             if (operationChoice.equalsIgnoreCase("multiply")) {
@@ -49,7 +55,7 @@ public class MainApplication {
             //Give option to exit program.
             String exitAnswer = Console.getStringInput("Continue calculating? Enter Y/N");
 
-            if (!exitAnswer.equals("Y") && !exitAnswer.equals("y")) {
+            if (!exitAnswer.equals("y") && !exitAnswer.equals("Y")) {
                 play = false;
             }
         }
