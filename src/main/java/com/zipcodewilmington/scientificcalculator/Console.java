@@ -24,12 +24,19 @@ public class Console {
     public static Integer getIntegerInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        return scanner.nextInt();
+
+        Integer userInput = scanner.nextInt();
+        return userInput;
+
     }
 
     public static Double getDoubleInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        return scanner.nextDouble();
+
+
+        Double userInput = scanner.nextDouble();
+        return userInput;
+
     }
 }
