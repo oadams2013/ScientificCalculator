@@ -2,7 +2,7 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class CoreFeatures {
 
-    public static Integer add(int i, int x){
+    public static double add(double i, double x){
         return i + x;
     }
 }

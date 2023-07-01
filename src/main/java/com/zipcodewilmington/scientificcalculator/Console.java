@@ -39,4 +39,9 @@ public class Console {
         return userInput;
 
     }
+
+    public static String MathOptions(){
+        return "Add, Subtract, Multiply, Divide, Clear" + "\n" +
+            "factorial, log, Sin, Cos, Tan";
+    }
 }
