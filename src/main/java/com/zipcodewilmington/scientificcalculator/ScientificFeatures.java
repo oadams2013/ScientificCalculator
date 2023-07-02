@@ -13,8 +13,8 @@ public class ScientificFeatures {
     public static double getArcTan(double n) { return Math.atan(n);} // inverse tan(x)
     public static double log(double n) { return Math.log(n);} //log of x
     public static double invLog(double n) { return Math.log10(n);}
-    public static int getFactorial(int n) {
-        int factorial = 1;
+    public static double getFactorial(double n) {
+        double factorial = 1;
         for (int i = 1; i <= n; i++) {
             factorial *= i;
         }
