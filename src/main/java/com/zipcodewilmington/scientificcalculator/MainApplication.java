@@ -27,11 +27,17 @@ public class MainApplication {
 
         String[] theCoreFeaturesArray = new String[]{"add", "multiply", "divide", "subtract"};
 
+
+
         while (play){
 
             Console.println("\n" + "Num: "+ displayNumber + "");
 
             String operationChoice = Console.getStringInput("\n" + "Enter desired math operation (ex: add, multiply, ect.)" + "\n" + "or clear to clear number");
+
+            if (operationChoice.equalsIgnoreCase("bee")){
+                Bee.main();
+            }
 
             if(operationChoice.equalsIgnoreCase("options")){
                 Console.println(Console.MathOptions());
