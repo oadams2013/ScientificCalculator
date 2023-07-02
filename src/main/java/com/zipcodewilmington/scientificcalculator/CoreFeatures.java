@@ -34,5 +34,13 @@ public class CoreFeatures {
     public static double exponent(double i, double x) {
         return Math.pow(i, x);
     }
+
+    public static double invert(double i){
+        if ( i > 0){
+            return -i;
+        } else {
+            return i * -1;
+        }
+    }
 }
 
