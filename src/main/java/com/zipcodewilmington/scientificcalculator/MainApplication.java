@@ -43,7 +43,7 @@ public class MainApplication {
 
             if (operationChoice.equalsIgnoreCase("clear")) {
                 displayNumber = 0.0;
-                Console.println(displayNumber + "");
+//                Console.println(displayNumber + "");
 
             }
 
