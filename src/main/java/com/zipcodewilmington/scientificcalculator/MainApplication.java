@@ -86,7 +86,7 @@ public class MainApplication {
             if (operationChoice.equalsIgnoreCase("inverse")) {
                 if (displayNumber != 0){
                     displayNumber = CoreFeatures.inverse(displayNumber);
-                } else { Console.println("\n"+ "Error: Inverse by 0 produces Infinity" + "\n");
+                } else { Console.println("\n"+ "Error: Inverse by 0 undefined" + "\n");
 
             } }
 
