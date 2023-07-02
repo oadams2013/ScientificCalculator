@@ -25,13 +25,19 @@ public class MainApplication {
 
         displayNumber += Console.getIntegerInput("Enter number");
 
-        String[] theCoreFeaturesArray = new String[]{"add", "multiply", "divide", "subtract"};
+        String[] theCoreFeaturesArray = new String[]{"add", "multiply", "divide", "subtract", "exponent"};
+
+
 
         while (play){
 
             Console.println("\n" + "Num: "+ displayNumber + "");
 
             String operationChoice = Console.getStringInput("\n" + "Enter desired math operation (ex: add, multiply, ect.)" + "\n" + "or clear to clear number");
+
+            if (operationChoice.equalsIgnoreCase("bee")){
+                Bee.main();
+            }
 
             if(operationChoice.equalsIgnoreCase("options")){
                 Console.println(Console.MathOptions());
@@ -58,19 +64,28 @@ public class MainApplication {
 
 
             if (operationChoice.equalsIgnoreCase("multiply")) {
-                //displayNumber = CoreFeatures.multiply(displayNumber, enteredNumber);
+              displayNumber = CoreFeatures.multiply(displayNumber, enteredNumber);
             }
 
             if (operationChoice.equalsIgnoreCase("divide")) {
-                //displayNumber = CoreFeatures.divide(displayNumber, enteredNumber);
+                if (enteredNumber != 0) {
+                    displayNumber = CoreFeatures.division(displayNumber, enteredNumber);
+                } else {
+                    Console.println("Error: Cannot divide by 0" + "\n");
+                }
             }
 
             if (operationChoice.equalsIgnoreCase("subtract")) {
-                //displayNumber = CoreFeatures.subtract(displayNumber, enteredNumber);
+              displayNumber = CoreFeatures.subtract(displayNumber, enteredNumber);
             }
-                }
-                }
 
+            if (operationChoice.equalsIgnoreCase("exponent")){
+              displayNumber = CoreFeatures.exponent(displayNumber, enteredNumber);
+            }}}
+
+            if (operationChoice.equalsIgnoreCase("Sq")){displayNumber = CoreFeatures.square(displayNumber);}
+            if (operationChoice.equalsIgnoreCase("sqrt")){displayNumber = CoreFeatures.squareRoot(displayNumber);}
+            if (operationChoice.equalsIgnoreCase("inverse")){displayNumber = CoreFeatures.inverse(displayNumber);}
             if (operationChoice.equalsIgnoreCase("Factorial")){displayNumber = ScientificFeatures.getFactorial(displayNumber);}
             if (operationChoice.equalsIgnoreCase("Sin")){displayNumber = ScientificFeatures.getSin(displayNumber);}
             if (operationChoice.equalsIgnoreCase("Cos")){displayNumber = ScientificFeatures.getCos(displayNumber);}

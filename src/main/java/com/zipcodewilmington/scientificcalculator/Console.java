@@ -41,8 +41,9 @@ public class Console {
     }
 
     public static String MathOptions(){
-        return "Add, Subtract, Multiply, Divide, Clear" + "\n" +
-            "factorial, log, Sin, Cos, Tan";
+        return "Add, Subtract, Multiply, Divide, Clear, Sq, SqRt" + "\n" +
+            "factorial, log, Sin, Cos, Tan, invLog, ArcTan" + "\n" +
+                "ArcSin, DegtoRad, RadtoDeg, ArcCos, Options";
     }
 
     public static String introArt(){

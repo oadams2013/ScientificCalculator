@@ -5,7 +5,7 @@ package com.zipcodewilmington.scientificcalculator;
 public class Bee {
 
 
-    public static void main(String[] args){  //play the intro and start the game
+    public static void main(){  //play the intro and start the game
         intro();
         runGame();
     }
