@@ -33,7 +33,7 @@ public class MainApplication {
 
             Console.println("\n" + "Num: "+ displayNumber + "");
 
-            String operationChoice = Console.getStringInput("\n" + "Enter desired math operation (ex: add, multiply, ect.)" + "\n" + "or clear to clear number");
+            String operationChoice = Console.getStringInput("\n" + "Enter desired operation (ex: add)" + "\n" + "Or enter 'options' for list of operations.");
 
             if (operationChoice.equalsIgnoreCase("bee")){
                 Bee.main();
@@ -96,6 +96,7 @@ public class MainApplication {
             if (operationChoice.equalsIgnoreCase("invLog")){displayNumber = ScientificFeatures.invLog(displayNumber);}
             if (operationChoice.equalsIgnoreCase("radToDeg")){displayNumber = ScientificFeatures.radToDeg(displayNumber);}
             if (operationChoice.equalsIgnoreCase("log")){displayNumber = ScientificFeatures.log(displayNumber);}
+            if (operationChoice.equalsIgnoreCase("invert")){displayNumber = CoreFeatures.invert(displayNumber);}
 
 
             Console.println(displayNumber + "");

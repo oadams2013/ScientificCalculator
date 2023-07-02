@@ -107,4 +107,28 @@ public class CoreFeaturesTest {
         //Then
         Assert.assertEquals(expected, actual, 0.0);
     }
+    @Test
+    public void invertTest(){
+        //Given
+        double a = 5;
+        double expected = -5;
+
+        //When
+        double actual = CoreFeatures.invert(a);
+
+        //Then
+        Assert.assertEquals(expected, actual, 0.0);
+    }
+    @Test
+    public void invertTest2(){
+        //Given
+        double a = -20;
+        double expected = 20;
+
+        //When
+        double actual = CoreFeatures.invert(a);
+
+        //Then
+        Assert.assertEquals(expected, actual, 0.0);
+    }
 }
