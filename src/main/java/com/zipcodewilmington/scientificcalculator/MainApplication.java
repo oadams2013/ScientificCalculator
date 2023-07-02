@@ -43,7 +43,6 @@ public class MainApplication {
 
             if (operationChoice.equalsIgnoreCase("clear")) {
                 displayNumber = 0.0;
-//                Console.println(displayNumber + "");
 
             }
 
@@ -85,8 +84,12 @@ public class MainApplication {
                 displayNumber = CoreFeatures.squareRoot(displayNumber);
             }
             if (operationChoice.equalsIgnoreCase("inverse")) {
-                displayNumber = CoreFeatures.inverse(displayNumber);
-            }
+                if (displayNumber != 0){
+                    displayNumber = CoreFeatures.inverse(displayNumber);
+                } else { Console.println("\n"+ "Error: Inverse by 0 undefined" + "\n");
+
+            } }
+
             if (operationChoice.equalsIgnoreCase("Factorial")) {
                 displayNumber = ScientificFeatures.getFactorial(displayNumber);
             }
